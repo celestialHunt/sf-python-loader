@@ -1,0 +1,26 @@
+# --- SENSITIVE CONFIG ---
+# Never push your Salesforce passwords or tokens
+config.ini
+
+# --- DATA & STORAGE ---
+# Never push 8 million rows of client data or PII
+data/
+*.csv
+*.xlsx
+
+# --- LOGS & ERRORS ---
+# These change every run; they don't belong in the codebase
+logs/
+errors/
+*.log
+
+# --- PYTHON ENVIRONMENT ---
+# Don't push the 1GB virtual environment; others will create their own
+.venv/
+__pycache__/
+*.pyc
+
+# --- IDE SPECIFIC ---
+# Cursor/VS Code settings that are specific to your machine
+.vscode/
+.cursor/
