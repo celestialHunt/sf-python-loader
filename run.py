@@ -1,7 +1,7 @@
 import configparser
 import time
 from datetime import timedelta
-from processor import SalesforceDataProcessor
+from src.processor import SalesforceDataProcessor
 
 def main():
     start_time = time.time()
